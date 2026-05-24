@@ -335,7 +335,7 @@
 
       .hero-name {
         font-family: var(--font-display);
-        font-size: clamp(3.5rem, 8vw, 7rem);
+        font-size: clamp(3.5rem, 7vw, 7rem);
         font-weight: 800;
         line-height: 0.95;
         letter-spacing: -3px;
@@ -346,12 +346,14 @@
         -webkit-text-stroke: 2px var(--purple-light);
         color: transparent;
         display: block;
+        font-size: clamp(1.5rem, 6vw, 5rem);
       }
       .hero-name .filled {
         background: linear-gradient(135deg, #fff 30%, var(--purple-light));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: block;
+        font-size: clamp(1.5rem, 4vw, 5rem);
       }
 
       .hero-tagline {
@@ -1294,7 +1296,10 @@
           <span class="filled">Full Stack</span>
           <span
             class="outline"
-            style="font-size: 0.75em; -webkit-text-stroke-width: 1.5px"
+            style="
+              font-size: clamp(1.5rem, 4vw, 5rem);
+              -webkit-text-stroke-width: 1.5px;
+            "
             >Developer</span
           >
         </h1>
@@ -1436,6 +1441,16 @@
           </div>
           <span class="skill-tag">Primary Framework</span>
         </div>
+        <div class="skill-card reveal" data-delay="240">
+          <div class="skill-top">
+            <span class="skill-name">React</span
+            ><span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="95"></div>
+          </div>
+          <span class="skill-tag">Library</span>
+        </div>
         <div class="skill-card reveal" data-delay="80">
           <div class="skill-top">
             <span class="skill-name">TypeScript</span
@@ -1455,16 +1470,6 @@
             <div class="skill-bar-fill" data-width="90"></div>
           </div>
           <span class="skill-tag">Language</span>
-        </div>
-        <div class="skill-card reveal" data-delay="240">
-          <div class="skill-top">
-            <span class="skill-name">React</span
-            ><span class="skill-pct">75%</span>
-          </div>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" data-width="75"></div>
-          </div>
-          <span class="skill-tag">Library</span>
         </div>
         <div class="skill-card reveal" data-delay="320">
           <div class="skill-top">
